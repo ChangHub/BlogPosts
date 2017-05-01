@@ -4,12 +4,14 @@ date: 2017-02-05 20:05:33
 tags: 软件安装	
 categories: MySQL
 ---
-### 文件安装
-1.MySQL安装文件分为两种，一种是msi格式的，一种是zip格式的。如果是msi格式的可以直接点击安装，按照它给出的安装提示进行安装（相信大家的英文可以看懂英文提示），一般MySQL将会安装在C:\Program Files\MySQL\MySQL Server X.x 该目录中；zip格式是自己解压，解压缩之后其实MySQL就可以使用了，但是要进行配置。
-
-2.配置环境变量：我的电脑--》属性--》环境--》高级变量，点击系统变量Path,在其后添加Mysql bin文件夹的路径。如下图：
+MySQL安装文件分为两种，一种是msi格式的，一种是zip格式的。如果是msi格式的可以直接点击安装;zip格式是自己解压，解压缩之后其实MySQL就可以使用了，但是要进行配置。
+<!--more-->
+## 安装配置
+### 配置环境变量
+我的电脑--》属性--》环境--》高级变量，点击系统变量Path,在其后添加Mysql bin文件夹的路径。如下图：
 ![MySQL环境变量配置][1]
-3.修改配置文件：可以修改默认的配置文件如，my-default.ini，或者自己重写一个配置文件如，my.ini
+### 修改配置文件
+可以修改默认的配置文件如，my-default.ini，或者自己重写一个配置文件如，my.ini。
 
 需要修改或者添加的配置项如下：
 ```
@@ -23,9 +25,10 @@ mysqld --initialize-insecure --user=mysql
 ```
 然后回车；去目录下查看，已经自动创建好data文件夹。
 
-4.安装MySQL服务：DOS命令mysqld -install，然后可以启动MySQL服务net start mysql。默认没有密码，输入mysql可直接进入。
+### 安装MySQL服务
+DOS命令mysqld -install，然后可以启动MySQL服务net start mysql。默认没有密码，输入mysql可直接进入。
 
-### 设置/修改密码
+## 设置/修改密码
 ```
 mysqladmin -u root -p[oldpass] password newpass
 ```
