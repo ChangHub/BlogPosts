@@ -1,3 +1,4 @@
+---
 title: Hexo+GitHub搭建个人博客
 data: 2017-01-30 20:30
 categories: 开源项目
@@ -5,7 +6,7 @@ author: HongChangCui
 tags:
  - Hexo
  - GitHub
-
+---
 Hexo是要给博客框架，使用MarkDown继续文章，生产静态网页。
 
 GitHub Pages是一个静态网站托管服务。
