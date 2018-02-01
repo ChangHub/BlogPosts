@@ -1,14 +1,17 @@
 ---
 title: NPM使用
 date: 2017-05-04 22:43:24
-tags: NPM
 categories: 软件使用
+author: HongChangCui
+tags: 
+  - NPM
+cover_picture: images/npm.jpg
 ---
 npm全称：Node Package Manager,Node.js的包管理工具，是全球最大开源生态系统。可以方便JS开发者分享、重用和更新代码。
 <!--more-->
 ## npm安装
 1. 下载
-npm和Node.js捆绑在一起，官网(https://nodejs.org/en/)下载Node.js安装即可。
+  npm和Node.js捆绑在一起，官网(https://nodejs.org/en/)下载Node.js安装即可。
 
 2. 检查
 
@@ -154,5 +157,5 @@ npm install -g cnmp --registry=https://registry.npm.taobao.org
 这样可以使用cnmp代替nmp 命令。
 
 
-  [1]: https://www.github.com/ChangHub/BlogImages/raw/master/npm%E5%AE%89%E8%A3%85%E6%A3%80%E6%9F%A5.jpg "npm安装检查"
-  [2]: https://www.github.com/ChangHub/BlogImages/raw/master/npm%E6%9B%B4%E6%96%B0%E5%87%BA%E9%94%99.jpg "npm更新出错"
+[1]: https://www.github.com/ChangHub/BlogImages/raw/master/npm%E5%AE%89%E8%A3%85%E6%A3%80%E6%9F%A5.jpg "npm安装检查"
+[2]: https://www.github.com/ChangHub/BlogImages/raw/master/npm%E6%9B%B4%E6%96%B0%E5%87%BA%E9%94%99.jpg "npm更新出错"

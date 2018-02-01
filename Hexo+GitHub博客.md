@@ -6,6 +6,7 @@ author: HongChangCui
 tags:
  - Hexo
  - GitHub
+cover_picture: images/hexo.jpg
 ---
 Hexo是要给博客框架，使用MarkDown继续文章，生产静态网页。
 

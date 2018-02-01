@@ -1,7 +1,11 @@
 ---
 title: Git使用
-tags: 软件使用
+date: 2017-05-01 20:30:00
 categories: Git
+author: HongChangCui
+tags: 
+  - 软件使用
+cover_picture: images/git.jpg
 ---
 Git是一个开源的分布式版本控制系统。
 为了帮组管理Linux内核开发而开发的一个开放源码的版本控制软件。
@@ -33,13 +37,13 @@ $git config --list
 ![Git 工作流程][3]
 #### Git基本概念
 * 工作区
-电脑本地目录
+  电脑本地目录
 * 暂存区
-英文叫做Stage或者index，存在".git"目录下index文件中，有时把暂存区叫做索引
+  英文叫做Stage或者index，存在".git"目录下index文件中，有时把暂存区叫做索引
 * 版本库
-工作区隐藏的目录".git"
-![Git 基本概念理][4]
-说明：
+  工作区隐藏的目录".git"
+  ![Git 基本概念理][4]
+  说明：
 * "HEAD"指向master分支一个游标，命令中出现HEAD的地方可以用master代替。
 * "Objects"标识区域为Git的对象库，位于".git/objects"目录下，包含了创建的各种对象及其内容。
 * 当执行"git add ."命令时，同时该工作区的文件被写入对象库中的一个新对象中，该对象的ID被记录在暂存区文件索引中，暂存区的目录树被更新。【工作区=》暂存区】
@@ -49,11 +53,11 @@ $git config --list
 * 当执行"git checkout ."命令时，会用暂存区的文件替换工作区的文件，该操作很危险，会清除工作区未添加到暂存区的改动。
 * 当执行"git checkout HEAD ."命令时，会用master分支的文件，替换暂存区和工作区的文件，该操作更危险。
 * Git的其他命令：
-![Git 命令][5]
-	- Git status:查看版本库的状态。可以知道哪些文件发生变化，哪些文件没有添加到版本库中，建议每次commit命令之前，通过该命令确认库状态。
-	- Git log:查看历史记录。包含每次的版本变化，每次变化对应一个ID。
-	- Git merge:把服务器上下载的代码与本机代码合并，或者进行分支合并。
-	- Git diff:把本地的代码与index中的代码进行比较。
+  ![Git 命令][5]
+  - Git status:查看版本库的状态。可以知道哪些文件发生变化，哪些文件没有添加到版本库中，建议每次commit命令之前，通过该命令确认库状态。
+  - Git log:查看历史记录。包含每次的版本变化，每次变化对应一个ID。
+  - Git merge:把服务器上下载的代码与本机代码合并，或者进行分支合并。
+  - Git diff:把本地的代码与index中的代码进行比较。
 #### 创建仓库
 * Git initGit:使用"Git init"命令，初始化一个Git仓库，Git仓库会生成一个隐藏目录".git",该目录包含了资源的所有元数据。
 * Git clone:从现有仓库中拷贝项目。
@@ -107,21 +111,21 @@ $ssh -T git@github.com
 ```
 然后可以创建仓库repository。
 * 本地仓库推送到远程仓库
-	- git init（新建一个本地仓库）
-	- git add .(添加所有文件到本地仓库)
-	- git commit -m 'first commit'(提交本地仓库)
-	- git remote add origin http://xxxxx/xxx.git(添加远程仓库，origin是别名）
-	- git push -u origin master(将本地仓库推送到远程仓库，并将origin设为默认的远程仓库）
+  - git init（新建一个本地仓库）
+  - git add .(添加所有文件到本地仓库)
+  - git commit -m 'first commit'(提交本地仓库)
+  - git remote add origin http://xxxxx/xxx.git(添加远程仓库，origin是别名）
+  - git push -u origin master(将本地仓库推送到远程仓库，并将origin设为默认的远程仓库）
 * 远程仓库克隆到本地仓库
-	- git remote -v(查看远程仓库)
-	- git fetch origin master(获取远程仓库最新版本到本地)
-	- git merge origin master(远程代码合并到本地仓库)
-	- git pull origin master(代替前面两步：fetch+merge)
+  - git remote -v(查看远程仓库)
+  - git fetch origin master(获取远程仓库最新版本到本地)
+  - git merge origin master(远程代码合并到本地仓库)
+  - git pull origin master(代替前面两步：fetch+merge)
 
 
-  [1]: https://www.github.com/ChangHub/BlogImages/raw/master/Git%E5%AE%89%E8%A3%85%E5%9B%BE%E7%A4%BA.jpg "Git安装图示"
-  [2]: https://www.github.com/ChangHub/BlogImages/raw/master/Git%E6%9F%A5%E7%9C%8B%E9%85%8D%E7%BD%AE%E4%BF%A1%E6%81%AF.jpg "Git查看配置信息"
-  [3]: https://www.github.com/ChangHub/BlogImages/raw/master/Git%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B.jpg "Git工作流程"
-  [4]: https://www.github.com/ChangHub/BlogImages/raw/master/Git%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5.jpg "Git基本概念"
-  [5]: https://www.github.com/ChangHub/BlogImages/raw/master/Git%E5%91%BD%E4%BB%A4.jpg "Git命令"
-  [6]: https://www.github.com/ChangHub/BlogImages/raw/master/GitHub%E7%94%A8%E6%88%B7%E9%85%8D%E7%BD%AE.jpg "GitHub用户配置"
+[1]: https://www.github.com/ChangHub/BlogImages/raw/master/Git%E5%AE%89%E8%A3%85%E5%9B%BE%E7%A4%BA.jpg "Git安装图示"
+[2]: https://www.github.com/ChangHub/BlogImages/raw/master/Git%E6%9F%A5%E7%9C%8B%E9%85%8D%E7%BD%AE%E4%BF%A1%E6%81%AF.jpg "Git查看配置信息"
+[3]: https://www.github.com/ChangHub/BlogImages/raw/master/Git%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B.jpg "Git工作流程"
+[4]: https://www.github.com/ChangHub/BlogImages/raw/master/Git%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5.jpg "Git基本概念"
+[5]: https://www.github.com/ChangHub/BlogImages/raw/master/Git%E5%91%BD%E4%BB%A4.jpg "Git命令"
+[6]: https://www.github.com/ChangHub/BlogImages/raw/master/GitHub%E7%94%A8%E6%88%B7%E9%85%8D%E7%BD%AE.jpg "GitHub用户配置"

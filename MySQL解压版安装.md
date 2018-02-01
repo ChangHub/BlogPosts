@@ -1,8 +1,11 @@
 ---
 title: MySQL解压版安装
 date: 2017-02-05 20:05:33
-tags: 软件安装	
 categories: MySQL
+author: HongChangCui
+tags: 
+  - 软件安装	
+cover_picture: images/mysql.jpg
 ---
 MySQL安装文件分为两种，一种是msi格式的，一种是zip格式的。如果是msi格式的可以直接点击安装;zip格式是自己解压，解压缩之后其实MySQL就可以使用了，但是要进行配置。
 <!--more-->
@@ -38,5 +41,5 @@ mysqladmin -u root -p[oldpass] password newpass
 ![MySQL 修改密码][2]
 
 
-  [1]: https://www.github.com/ChangHub/BlogImages/raw/master/MySQL%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE.jpg "MySQL环境变量配置"
-  [2]: https://www.github.com/ChangHub/BlogImages/raw/master/MySQL%E4%BF%AE%E6%94%B9%E5%AF%86%E7%A0%81.jpg "MySQL修改密码"
+[1]: https://www.github.com/ChangHub/BlogImages/raw/master/MySQL%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE.jpg "MySQL环境变量配置"
+[2]: https://www.github.com/ChangHub/BlogImages/raw/master/MySQL%E4%BF%AE%E6%94%B9%E5%AF%86%E7%A0%81.jpg "MySQL修改密码"
